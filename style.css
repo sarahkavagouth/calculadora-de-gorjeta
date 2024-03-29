@@ -14,7 +14,7 @@
     --green-600: #547878;
     --green-700: #3d6666;
     --green-800: #00474b;
-    --light-green:#26c2ae;
+    --light-green: #26c2ae;
     --white: #ffffff;
 
 
@@ -35,7 +35,8 @@ main {
     padding: 2rem;
 }
 
-.conta {
+.conta,
+.gorjeta {
     margin-bottom: 2rem;
 }
 
@@ -70,9 +71,11 @@ main {
     color: var(--green-300);
 }
 
-.conta:has(input:focus) div{
+.conta:has(input:focus) div {
     outline: 2px solid var(--light-green);
 }
+
+
 
 .gorjeta div {
     margin-top: 1rem;
@@ -82,6 +85,24 @@ main {
     gap: 1rem;
 }
 
+.gorjeta input {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    outline: none;
+    padding-block: 0.4rem;
+    border-radius: 0.3125rem;
+    background-color: var(--green-800);
+    color: var(--white);
+}
+
 .gorjeta #outra {
     width: 100%;
+    background-color: var(--green-100);
+    color: var(--green-800);
+}
+
+.gorjeta #outra input::placeholder {
+    color: var(--green-300);
 }
